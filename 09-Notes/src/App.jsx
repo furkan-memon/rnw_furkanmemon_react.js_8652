@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 
+//  const onChange  = ()
+const [Title, setTitle] = useState('')
+const [Notes, setNotes] = useState('')
+const [task, seTask] = useState([])
 const App = () => {
   const submitHandler = (e) => {
   e.preventDefault()
+  
   }
-//  const onChange  = ()
-  const [Title, setTitle] = useState('')
-  const [Notes, setNotes] = useState('')
   return (
     <div className=' h-screen lg:flex bg-black text-white '>
       <form onSubmit = {(e)=>{
